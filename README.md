@@ -33,7 +33,7 @@ uv run pytest              # testy
 - requests – komunikacja z API
 - pytest, pytest-cov – testy
 
-## Model domeny (szkic)
+## Model domeny
 
 | Klasa | Opis |
 | --- | --- |
