@@ -60,4 +60,3 @@ def test_pytest_raises(parser, zle_dane):
     with pytest.raises(BladOdpowiedziApi):
         parser(zle_dane)
 
-    
