@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "Lista stacji pomiarów": {
+      "@id": "https://api.gios.gov.pl/pjp-api/v1/rest/station/findAll"
+    },
+    "links": "https://schema.org/relatedLink",
+    "totalPages": "https://schema.org/numberOfPages"
+  },
+  "Lista stacji pomiarowych": [
+
+{
+    "Identyfikator stacji": 12096,
+    "Kod stacji": "LbLubOkopowa",
+    "Nazwa stacji": "Lublin, ul. Okopowa",
+    "WGS84 φ N": "51.245464",
+    "WGS84 λ E": "22.554994",
+    "Identyfikator miasta": 489,
+    "Nazwa miasta": "Lublin",
+    "Gmina": "Lublin",
+    "Powiat": "Lublin",
+    "Województwo": "LUBELSKIE",
+    "Ulica": "Okopowa 5a"
+},
+{
+    "Identyfikator stacji": 10956,
+    "Kod stacji": "MzWarBajkowa",
+    "Nazwa stacji": "Warszawa, ul. Bajkowa",
+    "WGS84 φ N": "52.188474",
+    "WGS84 λ E": "21.176233",
+    "Identyfikator miasta": 1006,
+    "Nazwa miasta": "Warszawa",
+    "Gmina": "Warszawa",
+    "Powiat": "Warszawa",
+    "Województwo": "MAZOWIECKIE",
+    "Ulica": "ul. Bajkowa 17/21"
+    },
+    {
+      "Identyfikator stacji": 11916,
+      "Kod stacji": "PdAugustowUz",
+      "Nazwa stacji": "Augustów, Uzdrowisko",
+      "WGS84 φ N": "53.852550",
+      "WGS84 λ E": "22.984686",
+      "Identyfikator miasta": 8,
+      "Nazwa miasta": "Augustów",
+      "Gmina": "Augustów",
+      "Powiat": "augustowski",
+      "Województwo": "PODLASKIE",
+      "Ulica": null
+    }
+
+],
+  "meta": {
+    "dc:title": "Lista stanowisk pomiarowych na stacji"
+  },
+  "links": {
+    "self": "https://api.gios.gov.pl/pjp-api/v1/rest/station/findAll?page=2&size=100"
+  },
+  "totalPages":13
+}

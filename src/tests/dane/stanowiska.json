@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "Lista stanowisk pomiarowych dla podanej stacji": {
+      "@id": "https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors"
+    },
+    "links": "https://schema.org/relatedLink",
+    "totalPages": "https://schema.org/numberOfPages"
+  },
+  "Lista stanowisk pomiarowych dla podanej stacji": [  
+    {
+      "Identyfikator stanowiska": 291,
+      "Identyfikator stacji": 52,
+      "Wskaźnik": "dwutlenek azotu",
+      "Wskaźnik - wzór": "NO2",
+      "Wskaźnik - kod": "NO2",
+      "Id wskaźnika": 6
+    },
+
+    {
+      "Identyfikator stanowiska": 295,
+      "Identyfikator stacji": 52,
+      "Wskaźnik": "pył zawieszony PM10",
+      "Wskaźnik - wzór": "PM10",
+      "Wskaźnik - kod": "PM10",
+      "Id wskaźnika": 3
+    },
+    {
+      "Identyfikator stanowiska": 14397,
+      "Identyfikator stacji": 52,
+      "Wskaźnik": "pył zawieszony PM10",
+      "Wskaźnik - wzór": "PM10",
+      "Wskaźnik - kod": "PM10",
+      "Id wskaźnika": 3
+    },
+    {
+      "Identyfikator stanowiska": 32560,
+      "Identyfikator stacji": 52,
+      "Wskaźnik": "pył zawieszony PM2.5",
+      "Wskaźnik - wzór": "PM2.5",
+      "Wskaźnik - kod": "PM2.5",
+      "Id wskaźnika": 69
+    }
+],
+  "meta": {
+    "dc:title": "Lista stacji pomiarowych"
+  },
+  "links": {
+    "self": "https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/52?page=0&size=20"
+  },
+  "totalPages": 3
+}

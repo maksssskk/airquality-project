@@ -10,6 +10,7 @@ class Pomiar:
     czas: datetime
     wartosc: float | None
 
+
 @dataclass(frozen=True)
 class Norma:
     parametr: str
@@ -18,11 +19,13 @@ class Norma:
     def przekroczona(self, wartosc: float | None) -> bool:
         return wartosc is not None and wartosc > self.limit
 
+
 @dataclass(frozen=True)
 class Stanowisko:
     id: int
     parametr: str
     jednostka: str
+
 
 @dataclass
 class Stacja:
@@ -34,9 +37,13 @@ class Stacja:
     def dodaj_stanowisko(self, stanowisko: Stanowisko) -> None:
         self.stanowiska.append(stanowisko)
 
-    def stanowisko_dla(self, parametr: str) -> Stanowisko:
+    def stanowiska_dla(self, parametr: str) -> list[Stanowisko]:
+        res = []
         for s in self.stanowiska:
             if parametr == s.parametr:
-                return s
-        raise BrakDanychPomiarowych(f'Parametru {parametr} nie ma na stacji!')
+                res.append(s)
 
+        if not res:
+            raise BrakDanychPomiarowych(f"Nie znaleziono danych dla {parametr}!")
+        else:
+            return res
