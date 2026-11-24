@@ -3,8 +3,6 @@ from pathlib import Path
 
 import pytest
 
-# from tests.test_klient_api import SCIEZKA_DANE, wczytaj_json
-
 SCIEZKA_DANE = Path(__file__).parent / "dane"
 
 
